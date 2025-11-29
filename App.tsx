@@ -369,9 +369,9 @@ export default function App() {
       <div className="h-screen w-screen bg-black text-terminal-green font-mono flex flex-col items-center justify-center p-4">
          <div className="w-full max-w-md space-y-2">
             <div className="text-xl font-bold mb-4">MINI MOE META // BOOT_SEQUENCE</div>
-            {bootStep >= 0 && <div>> INITIALIZING KERNEL... OK</div>}
-            {bootStep >= 1 && <div>> LOADING NEURAL MODULES... OK</div>}
-            {bootStep >= 2 && <div>> ESTABLISHING SECURE CONNECTION... OK</div>}
+            {bootStep >= 0 && <div>&gt; INITIALIZING KERNEL... OK</div>}
+            {bootStep >= 1 && <div>&gt; LOADING NEURAL MODULES... OK</div>}
+            {bootStep >= 2 && <div>&gt; ESTABLISHING SECURE CONNECTION... OK</div>}
             {bootStep >= 3 && (
               <div className="border border-terminal-gold text-terminal-gold p-4 mt-4 animate-pulse">
                  <div className="text-xs text-terminal-dim">SPONSORED_BY_PARTNER</div>
@@ -379,7 +379,7 @@ export default function App() {
                  <div className="text-xs">Initializing Affiliate Protocols...</div>
               </div>
             )}
-            {bootStep >= 4 && <div className="mt-4 text-terminal-dim">> SYSTEM READY. LAUNCHING...</div>}
+            {bootStep >= 4 && <div className="mt-4 text-terminal-dim">&gt; SYSTEM READY. LAUNCHING...</div>}
          </div>
       </div>
     );
@@ -606,3 +606,4 @@ export default function App() {
     </div>
   );
 }
+  
